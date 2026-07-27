@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans, Playfair_Display } from 'next/font/google';
 import { Toaster } from '@/components/ui/toaster';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -59,6 +60,7 @@ export default function RootLayout({
       <body className="font-body min-h-screen bg-beige-200 text-brown-900 antialiased">
         {children}
         <Toaster />
+        <SpeedInsights />
       </body>
     </html>
   );

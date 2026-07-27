@@ -7,7 +7,7 @@ import { Lock, Loader2, ArrowLeft, LogIn } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { PeacockFeather } from '@/components/PeacockFeather';
+import { Logo } from '@/components/Logo';
 import { config } from '@/lib/config';
 import Link from 'next/link';
 
@@ -51,7 +51,7 @@ export default function AdminLoginPage() {
         <div className="rounded-2xl border border-beige-300 bg-white p-8 shadow-card-warm">
           <div className="flex flex-col items-center text-center">
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-beige-100 shadow-warm ring-1 ring-gold-500/30">
-              <PeacockFeather className="h-9 w-9" />
+              <Logo className="h-9 w-9" />
             </div>
             <h1 className="mt-4 font-heading text-xl font-extrabold text-brown-900">
               {config.shopName}
